@@ -18,7 +18,12 @@ const projectSchema = new Schema(
     tags: [String],
     created_at: { type: Date, default: Date.now },
   },
-  { collection: "projects" }
+  {
+    collection: "projects",
+    // updated_at powers the "recently active" sort; created_at keeps its
+    // legacy default so existing documents are untouched.
+    timestamps: { createdAt: false, updatedAt: "updated_at" },
+  }
 );
 
 projectSchema.index({ domain: 1 });
