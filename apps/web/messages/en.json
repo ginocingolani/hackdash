@@ -21,7 +21,8 @@
       "search": "Search",
       "import": "Import",
       "preview": "Preview",
-      "loadMore": "Load more"
+      "loadMore": "Load more",
+      "add": "Add"
     },
     "status": {
       "label": "Status",
@@ -111,7 +112,8 @@
       "collections": "Collections",
       "dashboards": "Dashboards",
       "projects": "Projects",
-      "people": "People"
+      "people": "People",
+      "navLabel": "Browse"
     },
     "search": {
       "placeholder": "find it",
@@ -181,7 +183,9 @@
         "closed": "Closed",
         "openHint": "This dashboard is open: click to close",
         "closedHint": "This dashboard is closed: click to reopen"
-      }
+      },
+      "details": "Dashboard details",
+      "addAdminNoResults": "No users found"
     },
     "showcase": {
       "label": "Showcase",
@@ -267,7 +271,9 @@
         "import": "Import",
         "importing": "Importing…",
         "failed": "We couldn't import that repository. Check the name and try again."
-      }
+      },
+      "coverUploading": "Uploading…",
+      "tagsRemove": "Remove tag {tag}"
     },
     "detail": {
       "managedBy": "Managed by",
@@ -313,7 +319,18 @@
       "title": "Delete collection",
       "confirm": "This collection is going to be deleted. Its dashboards will not be affected. Are you sure?",
       "confirmButton": "Delete collection"
-    }
+    },
+    "curatedBy": "Curated by {name}",
+    "untitled": "Untitled collection",
+    "editTitle": "Edit collection",
+    "saved": "Collection saved",
+    "manage": {
+      "title": "Add dashboards",
+      "searchPlaceholder": "Search dashboards to add",
+      "hint": "Type at least two characters to search all dashboards.",
+      "added": "Added"
+    },
+    "createHint": "One URL for all your events — Media Party 2013 to today."
   },
   "profile": {
     "edit": {
@@ -322,7 +339,8 @@
       "emailPrivacy": "Your email is only visible to you",
       "aboutYou": "Some about you",
       "save": "Save profile",
-      "saved": "Profile saved, going back to business…"
+      "saved": "Profile saved, going back to business…",
+      "nameLabel": "Name"
     },
     "tabs": {
       "collections": "Collections",
@@ -331,7 +349,9 @@
       "contributions": "Contributions",
       "following": "Following"
     },
-    "empty": "Nothing here yet"
+    "empty": "Nothing here yet",
+    "joined": "Joined {when}",
+    "tabsLabel": "Profile sections"
   },
   "feed": {
     "title": "Activity",
@@ -346,7 +366,8 @@
       "left": "{name} left {project}",
       "followed": "{name} started following {project}",
       "unfollowed": "{name} unfollowed {project}",
-      "statusChanged": "{name} moved {project} to {status}"
+      "statusChanged": "{name} moved {project} to {status}",
+      "projectRemoved": "{name} removed {project}"
     }
   },
   "errors": {

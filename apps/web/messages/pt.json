@@ -21,7 +21,8 @@
       "search": "Buscar",
       "import": "Importar",
       "preview": "Prévia",
-      "loadMore": "Carregar mais"
+      "loadMore": "Carregar mais",
+      "add": "Adicionar"
     },
     "status": {
       "label": "Status",
@@ -111,7 +112,8 @@
       "collections": "Coleções",
       "dashboards": "Painéis",
       "projects": "Projetos",
-      "people": "Pessoas"
+      "people": "Pessoas",
+      "navLabel": "Explorar"
     },
     "search": {
       "placeholder": "encontre aqui",
@@ -181,7 +183,9 @@
         "closed": "Fechado",
         "openHint": "Este painel está aberto: clique para fechar",
         "closedHint": "Este painel está fechado: clique para reabrir"
-      }
+      },
+      "details": "Detalhes do painel",
+      "addAdminNoResults": "Nenhum usuário encontrado"
     },
     "showcase": {
       "label": "Vitrine",
@@ -267,7 +271,9 @@
         "import": "Importar",
         "importing": "Importando…",
         "failed": "Não conseguimos importar esse repositório. Confira o nome e tente de novo."
-      }
+      },
+      "coverUploading": "Enviando…",
+      "tagsRemove": "Remover tag {tag}"
     },
     "detail": {
       "managedBy": "Gerenciado por",
@@ -313,7 +319,18 @@
       "title": "Excluir coleção",
       "confirm": "Esta coleção será excluída. Os painéis dela não serão afetados. Tem certeza?",
       "confirmButton": "Excluir coleção"
-    }
+    },
+    "curatedBy": "Curada por {name}",
+    "untitled": "Coleção sem título",
+    "editTitle": "Editar coleção",
+    "saved": "Coleção salva",
+    "manage": {
+      "title": "Adicionar painéis",
+      "searchPlaceholder": "Busque painéis para adicionar",
+      "hint": "Digite pelo menos dois caracteres para buscar entre todos os painéis.",
+      "added": "Adicionado"
+    },
+    "createHint": "Uma única URL para todos os seus eventos — do Media Party 2013 até hoje."
   },
   "profile": {
     "edit": {
@@ -322,7 +339,8 @@
       "emailPrivacy": "Seu e-mail só é visível para você",
       "aboutYou": "Um pouco sobre você",
       "save": "Salvar perfil",
-      "saved": "Perfil salvo, de volta ao trabalho…"
+      "saved": "Perfil salvo, de volta ao trabalho…",
+      "nameLabel": "Nome"
     },
     "tabs": {
       "collections": "Coleções",
@@ -331,7 +349,9 @@
       "contributions": "Contribuições",
       "following": "Seguindo"
     },
-    "empty": "Nada por aqui ainda"
+    "empty": "Nada por aqui ainda",
+    "joined": "Entrou {when}",
+    "tabsLabel": "Seções do perfil"
   },
   "feed": {
     "title": "Atividade",
@@ -346,7 +366,8 @@
       "left": "{name} saiu de {project}",
       "followed": "{name} começou a seguir {project}",
       "unfollowed": "{name} deixou de seguir {project}",
-      "statusChanged": "{name} moveu {project} para {status}"
+      "statusChanged": "{name} moveu {project} para {status}",
+      "projectRemoved": "{name} removeu {project}"
     }
   },
   "errors": {
