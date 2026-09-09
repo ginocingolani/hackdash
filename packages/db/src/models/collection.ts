@@ -1,4 +1,6 @@
-import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
+import mongoose from "mongoose";
+import type { InferSchemaType, Model } from "mongoose";
+const { Schema } = mongoose;
 
 // Ported from legacy/lib/models/collection.js. Collection: "collections".
 const collectionSchema = new Schema(
@@ -14,4 +16,4 @@ const collectionSchema = new Schema(
 
 export type DashboardCollection = InferSchemaType<typeof collectionSchema>;
 export const DashboardCollectionModel: Model<DashboardCollection> =
-  models.Collection ?? model<DashboardCollection>("Collection", collectionSchema);
+  (mongoose.models.Collection as Model<DashboardCollection> | undefined) ?? mongoose.model<DashboardCollection>("Collection", collectionSchema);

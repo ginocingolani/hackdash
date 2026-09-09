@@ -1,4 +1,6 @@
-import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
+import mongoose from "mongoose";
+import type { InferSchemaType, Model } from "mongoose";
+const { Schema } = mongoose;
 
 // Ported field-for-field from legacy/lib/models/user.js so existing
 // hackdash.org documents remain readable. Collection: "users".
@@ -23,7 +25,7 @@ const userSchema = new Schema(
 userSchema.index({ provider: 1, provider_id: 1 });
 
 export type User = InferSchemaType<typeof userSchema>;
-export const UserModel: Model<User> = models.User ?? model<User>("User", userSchema);
+export const UserModel: Model<User> = (mongoose.models.User as Model<User> | undefined) ?? mongoose.model<User>("User", userSchema);
 
 // Legacy privacy mask applied when populating users into public payloads.
 export const USER_PUBLIC_FIELDS = "-__v -email -provider_id";

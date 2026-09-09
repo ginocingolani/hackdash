@@ -1,4 +1,6 @@
-import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
+import mongoose from "mongoose";
+import type { InferSchemaType, Model } from "mongoose";
+const { Schema } = mongoose;
 
 // Loosened from the legacy /^[a-z0-9]{5,10}$/ — a strict superset, so every
 // existing slug stays valid and names like "mediaparty26" fit.
@@ -30,4 +32,4 @@ dashboardSchema.index({ domain: 1 });
 
 export type Dashboard = InferSchemaType<typeof dashboardSchema>;
 export const DashboardModel: Model<Dashboard> =
-  models.Dashboard ?? model<Dashboard>("Dashboard", dashboardSchema);
+  (mongoose.models.Dashboard as Model<Dashboard> | undefined) ?? mongoose.model<Dashboard>("Dashboard", dashboardSchema);

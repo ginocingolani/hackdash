@@ -1,4 +1,6 @@
-import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
+import mongoose from "mongoose";
+import type { InferSchemaType, Model } from "mongoose";
+const { Schema } = mongoose;
 import { PROJECT_STATUSES } from "../statuses";
 
 // Ported from legacy/lib/models/project.js. Collection: "projects".
@@ -31,4 +33,4 @@ projectSchema.index({ created_at: -1 });
 
 export type Project = InferSchemaType<typeof projectSchema>;
 export const ProjectModel: Model<Project> =
-  models.Project ?? model<Project>("Project", projectSchema);
+  (mongoose.models.Project as Model<Project> | undefined) ?? mongoose.model<Project>("Project", projectSchema);
