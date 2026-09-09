@@ -19,9 +19,12 @@ packages/
 docs/
   legacy/       Architecture map of the original codebase (the rewrite spec)
   decisions/    Architecture decision records
+legacy/         The original application, preserved in-tree with full git
+                history for traceability. Reference only — do not deploy.
 ```
 
-The original codebase is kept as a read-only reference at `../hackdash-legacy`.
+This repository is a fork of [impronunciable/hackdash](https://github.com/impronunciable/hackdash);
+the original commit history is preserved.
 
 ## Development
 
