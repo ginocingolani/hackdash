@@ -1,0 +1,385 @@
+{
+  "common": {
+    "appName": "HackDash",
+    "actions": {
+      "save": "Save",
+      "saving": "Saving…",
+      "cancel": "Cancel",
+      "close": "Close",
+      "open": "Open",
+      "edit": "Edit",
+      "delete": "Delete",
+      "remove": "Remove",
+      "view": "View",
+      "create": "Create",
+      "share": "Share",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "back": "Back",
+      "retry": "Try again",
+      "confirm": "Confirm",
+      "search": "Search",
+      "import": "Import",
+      "preview": "Preview",
+      "loadMore": "Load more"
+    },
+    "status": {
+      "label": "Status",
+      "brainstorming": "Brainstorming",
+      "wireframing": "Wireframing",
+      "building": "Building",
+      "researching": "Researching",
+      "prototyping": "Prototyping",
+      "releasing": "Releasing"
+    },
+    "state": {
+      "loading": "Loading…",
+      "empty": "Nothing here yet",
+      "error": "Something went wrong"
+    },
+    "counts": {
+      "projects": "{count, plural, one {# project} other {# projects}}",
+      "dashboards": "{count, plural, one {# dashboard} other {# dashboards}}",
+      "collections": "{count, plural, one {# collection} other {# collections}}",
+      "contributors": "{count, plural, one {# contributor} other {# contributors}}",
+      "followers": "{count, plural, one {# follower} other {# followers}}"
+    },
+    "time": {
+      "justNow": "just now",
+      "minutesAgo": "{count, plural, one {# minute ago} other {# minutes ago}}",
+      "hoursAgo": "{count, plural, one {# hour ago} other {# hours ago}}",
+      "daysAgo": "{count, plural, one {# day ago} other {# days ago}}"
+    },
+    "theme": {
+      "label": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": {
+      "label": "Language",
+      "en": "English",
+      "es": "Español",
+      "pt": "Português"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "dashboards": "Dashboards",
+    "projects": "Projects",
+    "people": "People",
+    "collections": "Collections",
+    "logIn": "Log in",
+    "logOut": "Log out",
+    "myProfile": "My profile",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "searchPlaceholder": "Enter your keywords"
+  },
+  "auth": {
+    "signInTitle": "Log in to HackDash",
+    "accessWith": "Access with",
+    "continueWith": "Continue with {provider}",
+    "email": {
+      "label": "Email",
+      "placeholder": "you@example.org",
+      "sendLink": "Send me a login link",
+      "sentTitle": "Check your inbox",
+      "sentBody": "We sent a login link to {email}. It expires soon, so use it right away."
+    },
+    "completeProfile": {
+      "title": "Complete your profile",
+      "body": "We need a name and an email address before you can continue."
+    },
+    "loginRequired": "You need to log in to do that."
+  },
+  "landing": {
+    "hero": {
+      "titleTop": "Ideas for a",
+      "titleBottom": "hackathon",
+      "createPlaceholder": "dashboard name (4-32 chars)",
+      "createNow": "create now",
+      "hint": "4-32 characters: lowercase letters, numbers and hyphens",
+      "checking": "Checking availability…",
+      "available": "{domain} is available!",
+      "taken": "Sorry, that one is in use. Try another one.",
+      "invalid": "4-32 characters, lowercase letters, numbers and hyphens only",
+      "logInToCreate": "Log in to create your dashboard"
+    },
+    "tabs": {
+      "collections": "Collections",
+      "dashboards": "Dashboards",
+      "projects": "Projects",
+      "people": "People"
+    },
+    "search": {
+      "placeholder": "find it",
+      "noResults": "No results for “{query}”",
+      "results": "{count, plural, one {# result} other {# results}} for “{query}”"
+    },
+    "sections": {
+      "liveNow": "Live now",
+      "upcoming": "Upcoming",
+      "recent": "From the community"
+    },
+    "counts": {
+      "dashboards": "{count, plural, one {# dashboard} other {# dashboards}}",
+      "projects": "{count, plural, one {# project} other {# projects}}",
+      "users": "{count, plural, one {# registered user} other {# registered users}}",
+      "collections": "{count, plural, one {# collection} other {# collections}}",
+      "releasedProjects": "{count, plural, one {# released project} other {# released projects}}"
+    },
+    "features": {
+      "progress": "Inform progress to the community.",
+      "upload": "Upload your project to the platform.",
+      "collaborators": "Add collaborators to your projects.",
+      "share": "Share your app with the world."
+    },
+    "team": "Team",
+    "partners": "Partners",
+    "about": {
+      "title": "How HackDash was born",
+      "body": "HackDash was born by accident and out of need. We were looking for a platform to track ideas through hackathons in the run-up to the <mediaParty>Hacks/Hackers Media Party</mediaParty> organized by <hhba>@HacksHackersBA</hhba>, where hackers and journalists share ideas. We spread the need through Twitter, and that was the context in which HackDash was born. <blejman>@blejman</blejman> had an idea and <dzajdband>@dzajdband</dzajdband> was interested in implementing it. So we started building the app, hoping to get to the Buenos Aires Media Party with something that didn't suck. The Media Party hackathon day came with a pleasant surprise: not only did people like HackDash, but a couple of coders picked up improving HackDash as their own hackathon project. After the Media Party we realized this small app was filling a real need. Years later, the dashboard has become a standard for tracking innovative ideas around the world.",
+      "cta": "<cta>Create your own dashboard</cta>, be part of a global community."
+    }
+  },
+  "dashboard": {
+    "wall": {
+      "searchPlaceholder": "Search projects",
+      "sort": {
+        "label": "Sort",
+        "byName": "By Name",
+        "byDate": "By Date",
+        "byShowcase": "Showcase"
+      },
+      "createProject": "Create Project",
+      "openWebsite": "Open dashboard website",
+      "closedNotice": "This dashboard is closed — new projects can't be created.",
+      "empty": {
+        "title": "No projects yet",
+        "body": "Be the first: create a project and get hacking.",
+        "cta": "Create the first project"
+      },
+      "noResults": "No projects match “{query}”"
+    },
+    "form": {
+      "titlePlaceholder": "Hackathon Title",
+      "descriptionPlaceholder": "brief description of this hackathon",
+      "linkPlaceholder": "url to hackathon site"
+    },
+    "admin": {
+      "tools": "Admin tools",
+      "addAdmins": "Add admins",
+      "addAdminPlaceholder": "type name or username",
+      "addAdminWarning": "Warning! You will NOT be able to delete this dashboard if you add an admin!",
+      "revoke": "Revoke admin",
+      "revokeConfirm": "Remove {name} as an admin of this dashboard?",
+      "status": {
+        "label": "Dashboard Status",
+        "open": "Open",
+        "closed": "Closed",
+        "openHint": "This dashboard is open: click to close",
+        "closedHint": "This dashboard is closed: click to reopen"
+      }
+    },
+    "showcase": {
+      "label": "Showcase",
+      "edit": "Edit Showcase",
+      "save": "Save Showcase",
+      "reorderHint": "Drag to reorder, or use the arrow keys with a card selected.",
+      "visible": "Visible in showcase",
+      "hidden": "Hidden from showcase"
+    },
+    "share": {
+      "title": "Share this Dashboard",
+      "link": "Share Link",
+      "embed": {
+        "title": "Embed this dashboard",
+        "instructions": "Add this dashboard to your website by copying the code below",
+        "note": "The embedded code will show exactly what's below",
+        "preview": "Preview",
+        "columns": "Columns",
+        "anyStatus": "Any status",
+        "filterKeyword": "Filter by keyword",
+        "filterStatus": "Filter by status",
+        "copyCode": "Copy code",
+        "hide": {
+          "title": "Title",
+          "description": "Description",
+          "logo": "HackDash logo",
+          "progress": "Progress",
+          "projectTitle": "Project title",
+          "contributors": "Contributors",
+          "actionBar": "Action bar"
+        }
+      }
+    },
+    "csv": {
+      "export": "Export .CSV File"
+    },
+    "delete": {
+      "title": "Delete dashboard",
+      "warning": "This will permanently delete {domain}, its settings and its admin list. It cannot be undone.",
+      "typeToConfirm": "Type {domain} to confirm",
+      "confirmPlaceholder": "dashboard name",
+      "confirmButton": "Delete this dashboard",
+      "cannotRemove": "Cannot remove dashboard {name}",
+      "guards": {
+        "onlyOwner": "Only the owner can remove this dashboard.",
+        "hasAdmins": "Only dashboards with ONE admin can be removed.",
+        "hasProjects": "Only dashboards without projects can be removed."
+      }
+    }
+  },
+  "project": {
+    "card": {
+      "join": "Join",
+      "leave": "Leave",
+      "follow": "Follow",
+      "unfollow": "Unfollow",
+      "demo": "Demo",
+      "joining": "joining…",
+      "leaving": "leaving…",
+      "following": "following…",
+      "unfollowing": "unfollowing…"
+    },
+    "form": {
+      "createTitle": "Create Project",
+      "editTitle": "Edit project",
+      "titleLabel": "Title",
+      "titlePlaceholder": "Project Title",
+      "descriptionLabel": "Description",
+      "descriptionHint": "Markdown is supported.",
+      "tagsLabel": "Tags",
+      "tagsHint": "comma separated values",
+      "demoUrlLabel": "Project demo URL",
+      "cover": {
+        "label": "Cover image",
+        "drop": "Drop Image Here",
+        "tooBig": "File is too big, {max} is the max",
+        "invalidType": "Only jpg, png and gif are allowed"
+      },
+      "github": {
+        "importProject": "Import Project",
+        "provider": "GitHub",
+        "repoPlaceholder": "user/repository",
+        "import": "Import",
+        "importing": "Importing…",
+        "failed": "We couldn't import that repository. Check the name and try again."
+      }
+    },
+    "detail": {
+      "managedBy": "Managed by",
+      "contributors": "Contributors",
+      "followers": "Followers",
+      "share": "Share this Project",
+      "edit": "Edit",
+      "hackingAt": "Hacking at {dashboard}"
+    },
+    "delete": {
+      "title": "Delete project",
+      "confirm": "This project is going to be deleted. Are you sure?",
+      "confirmButton": "Delete project"
+    },
+    "embed": {
+      "title": "Embed this project",
+      "instructions": "Add this project to your website by copying the code below",
+      "hide": {
+        "progress": "Progress",
+        "picture": "Picture",
+        "title": "Title",
+        "description": "Description",
+        "contributors": "Contributors",
+        "actionBar": "Action bar"
+      }
+    }
+  },
+  "collection": {
+    "create": "Create collection",
+    "titlePlaceholder": "Collection of Hackathons Title",
+    "descriptionPlaceholder": "brief description of this collection of hackathons",
+    "myCollections": "My collections",
+    "addToCollection": "Add to collection",
+    "removeFromCollection": "Remove from collection",
+    "addedTo": "{name} has been added to {collection}",
+    "removedFrom": "{name} has been removed from {collection}",
+    "view": "View",
+    "empty": {
+      "title": "No dashboards in this collection yet",
+      "body": "Add dashboards to build a lasting record of your events."
+    },
+    "delete": {
+      "title": "Delete collection",
+      "confirm": "This collection is going to be deleted. Its dashboards will not be affected. Are you sure?",
+      "confirmButton": "Delete collection"
+    }
+  },
+  "profile": {
+    "edit": {
+      "title": "Edit Your Profile",
+      "allFieldsRequired": "all fields required",
+      "emailPrivacy": "Your email is only visible to you",
+      "aboutYou": "Some about you",
+      "save": "Save profile",
+      "saved": "Profile saved, going back to business…"
+    },
+    "tabs": {
+      "collections": "Collections",
+      "dashboards": "Dashboards",
+      "projects": "Projects",
+      "contributions": "Contributions",
+      "following": "Following"
+    },
+    "empty": "Nothing here yet"
+  },
+  "feed": {
+    "title": "Activity",
+    "live": "Live",
+    "connecting": "Connecting…",
+    "reconnecting": "Connection lost — reconnecting…",
+    "empty": "No activity yet. Events will appear here as they happen.",
+    "events": {
+      "projectCreated": "{name} created {project}",
+      "projectEdited": "{name} updated {project}",
+      "joined": "{name} joined {project}",
+      "left": "{name} left {project}",
+      "followed": "{name} started following {project}",
+      "unfollowed": "{name} unfollowed {project}",
+      "statusChanged": "{name} moved {project} to {status}"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "404",
+      "heading": "Page not found",
+      "body": "The page you're looking for doesn't exist or has moved.",
+      "goHome": "Go to the homepage"
+    },
+    "serverError": {
+      "title": "500",
+      "heading": "Something went wrong",
+      "body": "An unexpected error happened on our side. Try again in a moment.",
+      "retry": "Try again"
+    },
+    "api": {
+      "not_authenticated": "You need to log in to do that.",
+      "forbidden": "You don't have permission to do that.",
+      "not_found": "We couldn't find what you're looking for.",
+      "subdomain_invalid": "Dashboard names must be 5 to 10 characters, lowercase letters and numbers only.",
+      "subdomain_inuse": "Sorry, that one is in use. Try another one.",
+      "title_required": "Title is required",
+      "description_required": "Description is required",
+      "email_invalid": "Invalid email",
+      "name_required": "Name is required",
+      "email_required": "Email is required",
+      "dashboard_closed": "This dashboard is closed — new projects can't be added right now.",
+      "dashboard_has_projects": "Only dashboards without projects can be removed.",
+      "dashboard_has_admins": "Only dashboards with a single admin can be removed.",
+      "last_admin": "You can't remove the last admin of a dashboard.",
+      "leader_cannot_leave": "The project leader can't leave the project. Transfer leadership or delete the project instead.",
+      "validation_failed": "Some fields are invalid. Please review them and try again.",
+      "unknown": "Unexpected error. Please try again."
+    }
+  }
+}

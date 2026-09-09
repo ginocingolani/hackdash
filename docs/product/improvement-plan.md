@@ -134,7 +134,7 @@ Item numbers reference the parity checklist in `docs/legacy/client.md` §3.
 | 46. 404/500 | **Keep [P]** | Next.js error pages, branded, bilingual. |
 | 47. Prerender/sitemap/OG | **Replace [P]** | SSR makes prerender obsolete (per ADR); sitemap becomes an on-demand route; OG metas per entity with generated images (§3.4). |
 | 48. GA | **Replace [P]** | Classic `_gaq` is long dead. Self-hostable, cookieless analytics (Plausible/Umami) — the right default for a civic OSS tool; event vocabulary preserved (HomeSearch, DashSearch, Join/Leave/Follow). |
-| i18n (client.md §5) | **Modernize [P]** | next-intl with en + es at launch (port the 131 es keys), a visible language switcher (legacy had none), persisted preference. Spanish parity is a launch gate, not a nice-to-have. |
+| i18n (client.md §5) | **Modernize [P]** | next-intl with en + es + pt at launch (port the 131 es keys; fresh Brazilian Portuguese translation — added by Gino 2026-09-09), a visible language switcher (legacy had none), persisted preference. Spanish parity is a launch gate, not a nice-to-have. |
 
 ---
 
@@ -221,7 +221,7 @@ DoraHacks runs full comms infrastructure; we ship exactly two email triggers (re
 7. Embeds at legacy URLs honoring legacy params, server-rendered — ADR-mandated compatibility for partner sites. *(18, 32, 40–41)*
 8. Profiles with fixed self-update and email privacy; CSV export with fixed columns. *(16, 36–39, bugs #3/#9)*
 9. SSR SEO: OG metas + generated share images, on-demand sitemap, 404/500, short URLs — replaces prerender/sitemap services. *(42, 46–47)*
-10. es/en i18n with switcher; cookieless analytics; per-dashboard activity feed over SSE (emails stripped) — Spanish community is core; feed page was always intended. *(43, 48, §5 i18n)*
+10. en/es/pt i18n with switcher; cookieless analytics; per-dashboard activity feed over SSE (emails stripped) — Spanish community is core; feed page was always intended. *(43, 48, §5 i18n)*
 
 ### P1 — High-impact modernization (early phase 3; [N] unless noted)
 

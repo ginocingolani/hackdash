@@ -1,26 +1,149 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * HackDash design tokens — Media Party 2024 system (ADR 0002).
+ * Spec: docs/design/media-party-design-system.md
+ *
+ * Raw brand palette (`--mp-*`) is theme-invariant: these are fills for
+ * avatars, patterns and badges. `--mp-cyan` and `--mp-yellow` are FILL-ONLY —
+ * they fail contrast as text on light surfaces; text-safe alternates are
+ * `--mp-teal`, `--mp-blue`, `--mp-orange`.
+ *
+ * Semantic tokens flip with the theme. Three states:
+ *   bare :root                                  → light palette
+ *   @media (prefers-color-scheme: dark)
+ *     guarded :root:not([data-theme="light"])   → dark when system prefers it
+ *   :root[data-theme="dark"]                    → explicit dark toggle wins
+ */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  color-scheme: light;
+
+  /* Media Party 2024 — raw palette */
+  --mp-cyan: #00d7fb; /* fill-only */
+  --mp-yellow: #ffdc00; /* fill-only */
+  --mp-red: #ff4654;
+  --mp-ink: #0b2a47;
+  --mp-white: #ffffff;
+  --mp-blue: #0071ac;
+  --mp-orange: #fe9144;
+  --mp-teal: #04aeca;
+  --mp-plum: #58253a;
+  --mp-crimson: #d32633;
+
+  /* Semantic — light */
+  --surface: #f6f9fb; /* page ground: cool off-white tinted toward cyan */
+  --raised: #ffffff; /* cards, header, inputs */
+  --ink: var(--mp-ink); /* primary text */
+  --muted: #54708a; /* secondary text, ink-derived */
+  --line: #dae4ec; /* hairlines, borders */
+  --action: var(--mp-red); /* the single interactive color */
+  --on-action: #ffffff; /* text on action fills */
+  --highlight: var(--mp-orange);
+
+  /* Entity colors (semantic meaning only — badges, tabs, avatar fills) */
+  --entity-dashboard: var(--mp-ink);
+  --entity-project: var(--mp-blue);
+  --entity-user: var(--mp-plum);
+  --entity-collection: var(--mp-teal);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --surface: #071d33; /* dark ground: one step below ink */
+    --raised: #0b2a47; /* ink itself lifts the cards */
+    --ink: #e9f1f8;
+    --muted: #90aac0;
+    --line: #1d4160;
+    --action: #ff5866; /* action nudged lighter for dark-ground contrast */
+    --on-action: #ffffff;
+    --highlight: var(--mp-orange);
+
+    --entity-dashboard: #aecbe4;
+    --entity-project: #45aee5;
+    --entity-user: #d189a6;
+    --entity-collection: #22c8e4;
   }
 }
 
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --surface: #071d33;
+  --raised: #0b2a47;
+  --ink: #e9f1f8;
+  --muted: #90aac0;
+  --line: #1d4160;
+  --action: #ff5866;
+  --on-action: #ffffff;
+  --highlight: var(--mp-orange);
+
+  --entity-dashboard: #aecbe4;
+  --entity-project: #45aee5;
+  --entity-user: #d189a6;
+  --entity-collection: #22c8e4;
+}
+
+@theme inline {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+
+  /* Semantic */
+  --color-surface: var(--surface);
+  --color-raised: var(--raised);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-action: var(--action);
+  --color-on-action: var(--on-action);
+  --color-highlight: var(--highlight);
+
+  /* Entities */
+  --color-dashboard: var(--entity-dashboard);
+  --color-project: var(--entity-project);
+  --color-user: var(--entity-user);
+  --color-collection: var(--entity-collection);
+
+  /* Raw Media Party palette (fills, patterns, brand moments) */
+  --color-mp-cyan: var(--mp-cyan);
+  --color-mp-yellow: var(--mp-yellow);
+  --color-mp-red: var(--mp-red);
+  --color-mp-ink: var(--mp-ink);
+  --color-mp-white: var(--mp-white);
+  --color-mp-blue: var(--mp-blue);
+  --color-mp-orange: var(--mp-orange);
+  --color-mp-teal: var(--mp-teal);
+  --color-mp-plum: var(--mp-plum);
+  --color-mp-crimson: var(--mp-crimson);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Keyboard focus is always visible, always action red. */
+:focus-visible {
+  outline: 2px solid var(--action);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Cyan is a fill — selection is one of the places it belongs. */
+::selection {
+  background: var(--mp-cyan);
+  color: var(--mp-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

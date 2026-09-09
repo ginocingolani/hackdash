@@ -1,0 +1,385 @@
+{
+  "common": {
+    "appName": "HackDash",
+    "actions": {
+      "save": "Guardar",
+      "saving": "Guardando…",
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "open": "Abrir",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "remove": "Quitar",
+      "view": "Ver",
+      "create": "Crear",
+      "share": "Compartir",
+      "copy": "Copiar",
+      "copied": "¡Copiado!",
+      "back": "Volver",
+      "retry": "Reintentar",
+      "confirm": "Confirmar",
+      "search": "Buscar",
+      "import": "Importar",
+      "preview": "Vista previa",
+      "loadMore": "Cargar más"
+    },
+    "status": {
+      "label": "Estado",
+      "brainstorming": "Lluvia de ideas",
+      "wireframing": "Bocetos",
+      "building": "Desarrollo",
+      "researching": "Investigación",
+      "prototyping": "Prototipo",
+      "releasing": "Lanzamiento"
+    },
+    "state": {
+      "loading": "Cargando…",
+      "empty": "Todavía no hay nada aquí",
+      "error": "Algo salió mal"
+    },
+    "counts": {
+      "projects": "{count, plural, one {# proyecto} other {# proyectos}}",
+      "dashboards": "{count, plural, one {# tablero} other {# tableros}}",
+      "collections": "{count, plural, one {# colección} other {# colecciones}}",
+      "contributors": "{count, plural, one {# colaborador} other {# colaboradores}}",
+      "followers": "{count, plural, one {# seguidor} other {# seguidores}}"
+    },
+    "time": {
+      "justNow": "recién",
+      "minutesAgo": "{count, plural, one {hace # minuto} other {hace # minutos}}",
+      "hoursAgo": "{count, plural, one {hace # hora} other {hace # horas}}",
+      "daysAgo": "{count, plural, one {hace # día} other {hace # días}}"
+    },
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "language": {
+      "label": "Idioma",
+      "en": "English",
+      "es": "Español",
+      "pt": "Português"
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "dashboards": "Tableros",
+    "projects": "Proyectos",
+    "people": "Personas",
+    "collections": "Colecciones",
+    "logIn": "Ingresar",
+    "logOut": "Salir",
+    "myProfile": "Mi perfil",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "skipToContent": "Saltar al contenido",
+    "searchPlaceholder": "Ingresa tus palabras clave"
+  },
+  "auth": {
+    "signInTitle": "Ingresar a HackDash",
+    "accessWith": "Acceder con",
+    "continueWith": "Continuar con {provider}",
+    "email": {
+      "label": "Correo electrónico",
+      "placeholder": "tu@ejemplo.org",
+      "sendLink": "Enviarme un enlace de acceso",
+      "sentTitle": "Revisa tu correo",
+      "sentBody": "Te enviamos un enlace de acceso a {email}. Vence pronto, así que úsalo cuanto antes."
+    },
+    "completeProfile": {
+      "title": "Completa tu perfil",
+      "body": "Necesitamos un nombre y un correo electrónico antes de que puedas continuar."
+    },
+    "loginRequired": "Necesitas ingresar para hacer eso."
+  },
+  "landing": {
+    "hero": {
+      "titleTop": "Ideas para una",
+      "titleBottom": "hackatón",
+      "createPlaceholder": "nombre del tablero (4 a 32 caracteres)",
+      "createNow": "crear ahora",
+      "hint": "De 4 a 32 caracteres: minúsculas, números y guiones",
+      "checking": "Verificando disponibilidad…",
+      "available": "¡{domain} está disponible!",
+      "taken": "Perdón, ya está en uso. Prueba otro.",
+      "invalid": "De 4 a 32 caracteres, solo minúsculas, números y guiones",
+      "logInToCreate": "Ingresa para crear tu tablero"
+    },
+    "tabs": {
+      "collections": "Colecciones",
+      "dashboards": "Tableros",
+      "projects": "Proyectos",
+      "people": "Personas"
+    },
+    "search": {
+      "placeholder": "encuéntralo",
+      "noResults": "No hay resultados para “{query}”",
+      "results": "{count, plural, one {# resultado} other {# resultados}} para “{query}”"
+    },
+    "sections": {
+      "liveNow": "En vivo ahora",
+      "upcoming": "Próximos",
+      "recent": "De la comunidad"
+    },
+    "counts": {
+      "dashboards": "{count, plural, one {# tablero} other {# tableros}}",
+      "projects": "{count, plural, one {# proyecto} other {# proyectos}}",
+      "users": "{count, plural, one {# usuario registrado} other {# usuarios registrados}}",
+      "collections": "{count, plural, one {# colección} other {# colecciones}}",
+      "releasedProjects": "{count, plural, one {# proyecto lanzado} other {# proyectos lanzados}}"
+    },
+    "features": {
+      "progress": "Informa el progreso a la comunidad.",
+      "upload": "Sube tu proyecto a la plataforma.",
+      "collaborators": "Agrega colaboradores a tus proyectos.",
+      "share": "Comparte tu aplicación con el mundo."
+    },
+    "team": "Equipo",
+    "partners": "Socios",
+    "about": {
+      "title": "Cómo nació HackDash",
+      "body": "HackDash nació por accidente y por necesidad. Estábamos buscando una plataforma para hacer seguimiento de ideas durante los hackatones en la previa de la <mediaParty>Hacks/Hackers Media Party</mediaParty> organizada por <hhba>@HacksHackersBA</hhba>, en la que hackers y periodistas comparten ideas. Corrimos la voz de nuestra necesidad por Twitter y ese fue el contexto en el que nació HackDash. <blejman>@blejman</blejman> tuvo una idea y a <dzajdband>@dzajdband</dzajdband> le interesó implementarla. Así que empezamos a crear la aplicación esperando llegar a la Media Party de Buenos Aires con algo que no fuera horrible. El día del hackatón de la Media Party llegó acompañado de una grata sorpresa: no solamente HackDash le gustó a la gente, sino que algunos programadores tomaron la mejora de HackDash como su propio proyecto de hackatón. Después de la Media Party nos dimos cuenta de que esta pequeña aplicación estaba cubriendo una necesidad real. Años después, el tablero se ha convertido en un estándar para hacer seguimiento de ideas innovadoras alrededor del mundo.",
+      "cta": "<cta>Crea tu propio tablero</cta>, sé parte de una comunidad global."
+    }
+  },
+  "dashboard": {
+    "wall": {
+      "searchPlaceholder": "Buscar proyectos",
+      "sort": {
+        "label": "Ordenar",
+        "byName": "Por nombre",
+        "byDate": "Por fecha",
+        "byShowcase": "Galería"
+      },
+      "createProject": "Crear proyecto",
+      "openWebsite": "Abrir el sitio del tablero",
+      "closedNotice": "Este tablero está cerrado: no se pueden crear proyectos nuevos.",
+      "empty": {
+        "title": "Todavía no hay proyectos",
+        "body": "Sé la primera persona en crear un proyecto y ponte a hackear.",
+        "cta": "Crear el primer proyecto"
+      },
+      "noResults": "Ningún proyecto coincide con “{query}”"
+    },
+    "form": {
+      "titlePlaceholder": "Título de la hackatón",
+      "descriptionPlaceholder": "breve descripción de esta hackatón",
+      "linkPlaceholder": "url del sitio de la hackatón"
+    },
+    "admin": {
+      "tools": "Herramientas de administración",
+      "addAdmins": "Agregar administradores",
+      "addAdminPlaceholder": "escribe un nombre o nombre de usuario",
+      "addAdminWarning": "¡Atención! ¡NO podrás eliminar este tablero si agregas un administrador!",
+      "revoke": "Quitar administrador",
+      "revokeConfirm": "¿Quitar a {name} como administrador de este tablero?",
+      "status": {
+        "label": "Estado del tablero",
+        "open": "Abierto",
+        "closed": "Cerrado",
+        "openHint": "Este tablero está abierto: clic para cerrarlo",
+        "closedHint": "Este tablero está cerrado: clic para reabrirlo"
+      }
+    },
+    "showcase": {
+      "label": "Galería",
+      "edit": "Editar galería",
+      "save": "Guardar galería",
+      "reorderHint": "Arrastra para reordenar, o usa las flechas del teclado con una tarjeta seleccionada.",
+      "visible": "Visible en la galería",
+      "hidden": "Oculto en la galería"
+    },
+    "share": {
+      "title": "Compartir este tablero",
+      "link": "Enlace para compartir",
+      "embed": {
+        "title": "Insertar este tablero",
+        "instructions": "Agrega este tablero a tu sitio web copiando el código de abajo",
+        "note": "El código de inserción mostrará exactamente lo que está abajo",
+        "preview": "Previsualización",
+        "columns": "Columnas",
+        "anyStatus": "Cualquier estado",
+        "filterKeyword": "Filtrar por palabra clave",
+        "filterStatus": "Filtrar por estado",
+        "copyCode": "Copiar código",
+        "hide": {
+          "title": "Título",
+          "description": "Descripción",
+          "logo": "Logo de HackDash",
+          "progress": "Progreso",
+          "projectTitle": "Título del proyecto",
+          "contributors": "Colaboradores",
+          "actionBar": "Barra de acciones"
+        }
+      }
+    },
+    "csv": {
+      "export": "Exportar archivo .CSV"
+    },
+    "delete": {
+      "title": "Eliminar tablero",
+      "warning": "Esto eliminará {domain} de forma permanente, junto con su configuración y su lista de administradores. No se puede deshacer.",
+      "typeToConfirm": "Escribe {domain} para confirmar",
+      "confirmPlaceholder": "nombre del tablero",
+      "confirmButton": "Eliminar este tablero",
+      "cannotRemove": "No se puede eliminar el tablero {name}",
+      "guards": {
+        "onlyOwner": "Solo el dueño puede eliminar este tablero.",
+        "hasAdmins": "Solo los tableros con UN administrador pueden eliminarse.",
+        "hasProjects": "Solo los tableros sin proyectos pueden eliminarse."
+      }
+    }
+  },
+  "project": {
+    "card": {
+      "join": "Unirse",
+      "leave": "Abandonar",
+      "follow": "Seguir",
+      "unfollow": "Dejar de seguir",
+      "demo": "Demo",
+      "joining": "uniéndose…",
+      "leaving": "abandonando…",
+      "following": "siguiendo…",
+      "unfollowing": "dejando de seguir…"
+    },
+    "form": {
+      "createTitle": "Crear proyecto",
+      "editTitle": "Editar proyecto",
+      "titleLabel": "Título",
+      "titlePlaceholder": "Título del proyecto",
+      "descriptionLabel": "Descripción",
+      "descriptionHint": "Puedes usar Markdown.",
+      "tagsLabel": "Etiquetas",
+      "tagsHint": "valores separados por comas",
+      "demoUrlLabel": "URL de demo del proyecto",
+      "cover": {
+        "label": "Imagen de portada",
+        "drop": "Suelta la imagen aquí",
+        "tooBig": "El archivo es muy grande, el máximo es {max}",
+        "invalidType": "Solo se permiten jpg, png y gif"
+      },
+      "github": {
+        "importProject": "Importar proyecto",
+        "provider": "GitHub",
+        "repoPlaceholder": "usuario/repositorio",
+        "import": "Importar",
+        "importing": "Importando…",
+        "failed": "No pudimos importar ese repositorio. Revisa el nombre y vuelve a intentarlo."
+      }
+    },
+    "detail": {
+      "managedBy": "Administrado por",
+      "contributors": "Colaboradores",
+      "followers": "Seguidores",
+      "share": "Compartir este proyecto",
+      "edit": "Editar",
+      "hackingAt": "Hackeando en {dashboard}"
+    },
+    "delete": {
+      "title": "Eliminar proyecto",
+      "confirm": "Este proyecto será eliminado. ¿Estás seguro?",
+      "confirmButton": "Eliminar proyecto"
+    },
+    "embed": {
+      "title": "Insertar este proyecto",
+      "instructions": "Agrega este proyecto a tu sitio copiando el código de abajo",
+      "hide": {
+        "progress": "Progreso",
+        "picture": "Imagen",
+        "title": "Título",
+        "description": "Descripción",
+        "contributors": "Colaboradores",
+        "actionBar": "Barra de acciones"
+      }
+    }
+  },
+  "collection": {
+    "create": "Crear colección",
+    "titlePlaceholder": "Título de la colección de hackatones",
+    "descriptionPlaceholder": "breve descripción de esta colección de hackatones",
+    "myCollections": "Mis colecciones",
+    "addToCollection": "Agregar a una colección",
+    "removeFromCollection": "Quitar de la colección",
+    "addedTo": "{name} se agregó a {collection}",
+    "removedFrom": "{name} se quitó de {collection}",
+    "view": "Ver",
+    "empty": {
+      "title": "Todavía no hay tableros en esta colección",
+      "body": "Agrega tableros para construir la memoria de tus eventos."
+    },
+    "delete": {
+      "title": "Eliminar colección",
+      "confirm": "Esta colección será eliminada. Sus tableros no se verán afectados. ¿Estás seguro?",
+      "confirmButton": "Eliminar colección"
+    }
+  },
+  "profile": {
+    "edit": {
+      "title": "Edita tu perfil",
+      "allFieldsRequired": "todos los campos son obligatorios",
+      "emailPrivacy": "Tu correo solo es visible para ti",
+      "aboutYou": "Algo sobre ti",
+      "save": "Guardar perfil",
+      "saved": "Perfil guardado, volviendo…"
+    },
+    "tabs": {
+      "collections": "Colecciones",
+      "dashboards": "Tableros",
+      "projects": "Proyectos",
+      "contributions": "Colaboraciones",
+      "following": "Siguiendo"
+    },
+    "empty": "Todavía no hay nada aquí"
+  },
+  "feed": {
+    "title": "Actividad",
+    "live": "En vivo",
+    "connecting": "Conectando…",
+    "reconnecting": "Se perdió la conexión: reconectando…",
+    "empty": "Todavía no hay actividad. Los eventos aparecerán aquí a medida que sucedan.",
+    "events": {
+      "projectCreated": "{name} creó {project}",
+      "projectEdited": "{name} actualizó {project}",
+      "joined": "{name} se unió a {project}",
+      "left": "{name} abandonó {project}",
+      "followed": "{name} empezó a seguir {project}",
+      "unfollowed": "{name} dejó de seguir {project}",
+      "statusChanged": "{name} pasó {project} a {status}"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "404",
+      "heading": "Página no encontrada",
+      "body": "La página que buscas no existe o fue movida.",
+      "goHome": "Ir al inicio"
+    },
+    "serverError": {
+      "title": "500",
+      "heading": "Algo salió mal",
+      "body": "Ocurrió un error inesperado de nuestro lado. Vuelve a intentarlo en un momento.",
+      "retry": "Reintentar"
+    },
+    "api": {
+      "not_authenticated": "Necesitas ingresar para hacer eso.",
+      "forbidden": "No tienes permiso para hacer eso.",
+      "not_found": "No encontramos lo que buscas.",
+      "subdomain_invalid": "El nombre del tablero debe tener de 5 a 10 caracteres, solo minúsculas y números.",
+      "subdomain_inuse": "Perdón, ya está en uso. Prueba otro.",
+      "title_required": "El título es obligatorio",
+      "description_required": "La descripción es obligatoria",
+      "email_invalid": "Correo inválido",
+      "name_required": "El nombre es obligatorio",
+      "email_required": "El correo es obligatorio",
+      "dashboard_closed": "Este tablero está cerrado: por ahora no se pueden agregar proyectos nuevos.",
+      "dashboard_has_projects": "Solo los tableros sin proyectos pueden eliminarse.",
+      "dashboard_has_admins": "Solo los tableros con un único administrador pueden eliminarse.",
+      "last_admin": "No puedes quitar al último administrador de un tablero.",
+      "leader_cannot_leave": "Quien lidera el proyecto no puede abandonarlo. Transfiere el liderazgo o elimina el proyecto.",
+      "validation_failed": "Algunos campos no son válidos. Revísalos y vuelve a intentarlo.",
+      "unknown": "Error inesperado. Vuelve a intentarlo."
+    }
+  }
+}
