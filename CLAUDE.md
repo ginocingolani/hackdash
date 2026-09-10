@@ -19,6 +19,11 @@ Copy `apps/web/.env.example` to `apps/web/.env.local`; only `MONGODB_URI` and
 
 ## Conventions & gotchas
 
+- **Client components must import `@hackdash/db/shared`, never the package
+  root.** The root pulls in the mongoose models, which crash in browser
+  bundles (mongoose's browser stub has no `.models`) — and only at runtime in
+  a real browser, so typecheck/lint/curl all stay green while every page with
+  a client card island dies. Pure constants/types live in `src/shared.ts`.
 - **Mongoose is CommonJS.** Always `import mongoose from "mongoose"` and use
   `mongoose.Schema` / `mongoose.model` / `mongoose.models` (types may be named
   imports). Named *value* imports pass in Vitest (its interop is lenient) but
