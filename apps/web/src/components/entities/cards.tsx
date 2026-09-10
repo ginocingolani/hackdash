@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ProjectStatus } from "@hackdash/db";
+import type { ProjectStatus } from "@hackdash/db/shared";
 import { Card } from "@/components/ui/Card";
 import { StatusBar } from "@/components/ui/StatusBar";
 import { DiamondAvatar } from "@/components/ui/DiamondAvatar";

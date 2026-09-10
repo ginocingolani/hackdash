@@ -3,8 +3,8 @@ import type {
   DashboardCardData,
   ProjectCardData,
 } from "@/components/entities/cards";
-import type { ProjectStatus } from "@hackdash/db";
-import { PROJECT_STATUSES } from "@hackdash/db";
+import type { ProjectStatus } from "@hackdash/db/shared";
+import { PROJECT_STATUSES } from "@hackdash/db/shared";
 import { timeAgo } from "@/lib/timeAgo";
 
 // Serializers from service-layer documents (hydrated or lean) to the plain

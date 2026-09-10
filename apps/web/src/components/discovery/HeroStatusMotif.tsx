@@ -1,4 +1,4 @@
-import { PROJECT_STATUSES } from "@hackdash/db";
+import { PROJECT_STATUSES } from "@hackdash/db/shared";
 
 // The six-segment status bar, blown up to hero scale on the ink ground —
 // the product's core metaphor as the landing's one graphic. Segments fill

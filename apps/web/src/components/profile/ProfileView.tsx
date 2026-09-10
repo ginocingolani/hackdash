@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
-import { PROJECT_STATUSES, type ProjectStatus } from "@hackdash/db";
+import { PROJECT_STATUSES, type ProjectStatus } from "@hackdash/db/shared";
 import { cx } from "@/lib/cx";
 import { DiamondAvatar } from "@/components/ui/DiamondAvatar";
 import {

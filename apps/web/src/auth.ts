@@ -46,6 +46,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     },
   }),
   session: { strategy: "jwt" },
+  // The app always runs behind its own host (or a proxy we configure), so the
+  // request host is trustworthy; without this, `next start` rejects every
+  // auth call with UntrustedHost.
+  trustHost: true,
   providers,
   // Auth.js default sign-in page for now; the branded /login page arrives
   // with the design phase.

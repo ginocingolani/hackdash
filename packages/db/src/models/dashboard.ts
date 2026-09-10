@@ -2,9 +2,10 @@ import mongoose from "mongoose";
 import type { InferSchemaType, Model } from "mongoose";
 const { Schema } = mongoose;
 
-// Loosened from the legacy /^[a-z0-9]{5,10}$/ — a strict superset, so every
-// existing slug stays valid and names like "mediaparty26" fit.
-export const DASHBOARD_DOMAIN_REGEX = /^[a-z0-9](?:[a-z0-9-]{2,30})[a-z0-9]$/;
+// Canonical definition lives in ../shared (the client-safe subpath);
+// re-exported here so server code keeps importing it from the package root.
+import { DASHBOARD_DOMAIN_REGEX } from "../shared";
+export { DASHBOARD_DOMAIN_REGEX };
 
 // Ported from legacy/lib/models/dashboard.js. Collection: "dashboards".
 // `covers` and `projectsCount` are denormalized caches recomputed on project

@@ -1,6 +1,6 @@
 "use client";
 
-import { PROJECT_STATUSES, type ProjectStatus } from "@hackdash/db";
+import { PROJECT_STATUSES, type ProjectStatus } from "@hackdash/db/shared";
 import { cx } from "@/lib/cx";
 import type { StatusLabels } from "@/components/dashboard/types";
 

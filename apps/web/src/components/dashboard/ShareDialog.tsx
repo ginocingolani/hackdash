@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { PROJECT_STATUSES } from "@hackdash/db";
+import { PROJECT_STATUSES } from "@hackdash/db/shared";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";

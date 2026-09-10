@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { getLocale, getTranslations } from "next-intl/server";
-import { PROJECT_STATUSES, type ProjectStatus } from "@hackdash/db";
+import { PROJECT_STATUSES, type ProjectStatus } from "@hackdash/db/shared";
 import { Button } from "@/components/ui/Button";
 import {
   CollectionCard,

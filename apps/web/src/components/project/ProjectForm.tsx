@@ -3,8 +3,8 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
-import type { ProjectStatus } from "@hackdash/db";
-import { PROJECT_STATUSES } from "@hackdash/db";
+import type { ProjectStatus } from "@hackdash/db/shared";
+import { PROJECT_STATUSES } from "@hackdash/db/shared";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { coverGradient } from "@/components/entities/coverFallback";

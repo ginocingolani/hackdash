@@ -1,4 +1,4 @@
-import type { ProjectStatus } from "@hackdash/db";
+import type { ProjectStatus } from "@hackdash/db/shared";
 
 // Plain serialized shapes passed from server pages into the client wall.
 

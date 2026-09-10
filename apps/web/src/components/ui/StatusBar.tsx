@@ -1,4 +1,4 @@
-import { PROJECT_STATUSES, type ProjectStatus } from "@hackdash/db";
+import { PROJECT_STATUSES, type ProjectStatus } from "@hackdash/db/shared";
 import { cx } from "@/lib/cx";
 
 // The 6-segment progress bar — HackDash's most distinctive UI element.
